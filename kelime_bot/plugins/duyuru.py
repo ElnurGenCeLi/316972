@@ -7,7 +7,7 @@ from kelime_bot import OWNER_ID
 
 @Client.on_message(filters.command(["duyuru"], [".", "/"]) & filters.user(OWNER_ID))
 async def duyuru(c:Client, m:Message):
-    chats = await c.get_messages(1797867165, data_message.message_id)
+    chats = await c.get_messages(OWNER_ID, data_message.message_id)
     chats_list = chats.text.split()
         
         
@@ -38,7 +38,7 @@ async def duyuru(c:Client, m:Message):
 
 @Client.on_message(filters.command(["fduyuru"], [".", "/"]) & filters.user(OWNER_ID))
 async def fduyuru(c:Client, m:Message):
-    chats = await c.get_messages(1797867165, data_message.message_id)
+    chats = await c.get_messages(OWNER_ID, data_message.message_id)
     chats_list = chats.text.split()
         
 
