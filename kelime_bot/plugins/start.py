@@ -6,7 +6,7 @@ from kelime_bot import oyun
 from kelime_bot.helpers.kelimeler import *
 from kelime_bot.helpers.keyboards import *
 
-@Client.on_message(filters.command("game", f"game@{BOT_USERNAME}") & ~filters.private & ~filters.channel & ~filters.edited)
+@Client.on_message(filters.command("game", f"game@KelimeTuretmeBot") & ~filters.private & ~filters.channel & ~filters.edited)
 async def kelimeoyun(c:Client, m:Message):
     global oyun
     aktif = False
