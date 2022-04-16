@@ -9,7 +9,7 @@ from kelime_bot import *
 
 
 
-@Client.on_message(filters.command("stop", f"stop@{BOT_USERNAME}") & ~filters.private & ~filters.channel)
+@Client.on_message(filters.command("stop", f"stop@KelimeTuretmeBot") & ~filters.private & ~filters.channel)
 async def stop(c:Client, m:Message):
     global oyun
     
