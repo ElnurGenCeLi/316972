@@ -34,7 +34,7 @@ async def passs(c:Client, m:Message):
                 kelime_list+= harf + " "
             
             text = f"""
-🎯 𝖱𝗈𝗎𝗇𝖽 : {oyun[m.chat.id]['round']}/60 
+🎯 𝖱𝖺𝗎𝗇𝖽 : {oyun[m.chat.id]['round']}/60 
 📝 𝖪𝖾𝗅𝗂𝗆𝖾 :   <code>{kelime_list}</code>
 🔎 İ𝗉𝗎𝖼𝗎 : 1.𝖧𝖺𝗋𝖿 > {oyun[m.chat.id]["kelime"][0]}
 ✍🏻 𝖴𝗓𝗎𝗇𝗅𝗎𝗄 : {int(len(kelime_list)/2)} 
