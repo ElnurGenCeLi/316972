@@ -1,4 +1,4 @@
-from pyrogram import Clfrom, filters
+from pyrogram import Client, filters
 
 
 message= "Ben bir botum beni kullanarak yorum yapıyorsunuz."
