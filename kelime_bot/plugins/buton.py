@@ -6,14 +6,13 @@ from pyrogram.types import InlineKeyboardButton
 
 keyboard = InlineKeyboardMarkup([
     [
-        InlineKeyboardButton("🎉 Gruba Ekle  🎉", url=f"http://t.me/Shark_Game_Bot?startgroup=new") 
+        InlineKeyboardButton("Kanal 📚", url="t.me/EtiketGram")
     ],
     [
-        InlineKeyboardButton("support 👨🏻‍💻", url="t.me/StarBotDestek"),
-        InlineKeyboardButton("Kanal 📚", url="t.me/StarBotKanal")
+        InlineKeyboardButton("👨🏻‍💻 Geliştirici 👨🏻‍💻", url="t.me/sherlockMain")
     ],
     [
-        InlineKeyboardButton("gelistiri 📚", url="t.me/ByWolk")
+        InlineKeyboardButton("Gruba Ekle  🎉", url=f"http://t.me/EtiketGramot?startgroup=new")
     ]
 ])
 
