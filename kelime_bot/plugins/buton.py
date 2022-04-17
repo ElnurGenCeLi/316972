@@ -10,7 +10,7 @@ keyboard = InlineKeyboardMarkup([
     ],
     [
         InlineKeyboardButton("support 👨🏻‍💻", url="t.me/StarBotDestek"),
-        InlineKeyboardButton("Kanal 📚", url="t.me/StarBotKanal"),
+        InlineKeyboardButton("Kanal 📚", url="t.me/StarBotKanal")
     ],
     [
         InlineKeyboardButton("gelistiri 📚", url="t.me/ByWolk")
