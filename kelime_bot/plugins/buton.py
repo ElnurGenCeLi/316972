@@ -8,8 +8,11 @@ keyboard = InlineKeyboardMarkup([
         InlineKeyboardButton("🎉 𝖡𝖾𝗇𝗂 𝖦𝗋𝗎𝖻𝖺 𝖤𝗄𝗅𝖾  🎉", url=f"http://t.me/Shark_Game_Bot?startgroup=new")
     ],
     [
-        InlineKeyboardButton("🇹🇷 𝖮𝗐𝗇𝖾𝗋 ", url="t.me/ByWolk"),
-        InlineKeyboardButton("📝 𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋", url="t.me/Starbotkanal/62"),
+        InlineKeyboardButton("📝 𝖲𝗎𝗉𝗉𝗈𝗋𝗍 ", url="t.me/StarBotDestek"),
+        InlineKeyboardButton("✏️ 𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋 ", url="t.me/Starbotkanal/62"),
+    ],
+    [
+        InlineKeyboardButton("🇹🇷 𝖮𝗐𝗇𝖾𝗋 ", url="t.me/@tmcnmm")
     ]
 ])
 
