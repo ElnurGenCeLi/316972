@@ -10,7 +10,7 @@ async def ratingsa(c:Client, m:Message):
     metin = """📝 𝖦𝗅𝗈𝖻𝖺𝗅 𝖳𝗈𝗉 20 𝖮𝗒𝗎𝗇𝖼𝗎 :
      
     """
-    eklenen = 0
+    eklenen = 1
     puanlar = []
     for kisi in rating:
         puanlar.append(rating[kisi])
@@ -18,8 +18,9 @@ async def ratingsa(c:Client, m:Message):
     for puan in puanlar:
         for kisi in rating:
             if puan == rating[kisi]:
-                metin += f"**{kisi}** :  **{puan}**  𝖯𝗎𝖺𝗇\n"
-                eklenen += 0
+                metin += f"
+**{kisi}** :  **{puan}**  𝖯𝗎𝖺𝗇\n"
+                eklenen += 1
                 if eklenen == 20:
                     break
                 
