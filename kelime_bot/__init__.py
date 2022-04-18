@@ -17,8 +17,8 @@ LOGGER = logging.getLogger(__name__)
 # Hesap
 API_ID = "9544149"
 API_HASH = "ec6038735b49819f89c26567dc43b161"
-TOKEN = "5292850699:AAFL_DQNSxlTCGn--fTM9UEt5BnYOW7irPQ"
-USERNAME = "KelimeUretBot"
+TOKEN = "5232123283:AAG9YlUoiz7Sv_giKrnvNDfh-flhrA9a9F4"
+USERNAME = "ghvvivbjb_bot"
 
 
 
