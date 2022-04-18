@@ -36,7 +36,7 @@ async def passs(c:Client, m:Message):
             text = f"""
 🎯 Raund : {oyun[m.chat.id]['round']}/60 
 📝 Söz :   <code>{kelime_list}</code>
-💰 Qazanacağın 𝖯𝗎𝖺𝗇 : 1
+💰 Qazanacağın Bal : 1
 🔎 İ𝗉𝗎𝖼𝗎 : 1. {oyun[m.chat.id]["kelime"][0]}
 ✍🏻 𝖴𝗓𝗎𝗇𝗅uğ : {int(len(kelime_list)/2)} 
 
