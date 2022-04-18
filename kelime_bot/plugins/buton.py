@@ -5,18 +5,18 @@ from pyrogram.types import InlineKeyboardButton
 
 keyboard = InlineKeyboardMarkup([
     [
-        InlineKeyboardButton("🎉  𝖡𝖾𝗇𝗂 𝖦𝗋𝗎𝖻𝖺 𝖤𝗄𝗅𝖾  🎉", url=f"http://t.me/Shark_Game_Bot?startgroup=new")
+        InlineKeyboardButton("➕ Məni Qrupa Əlavə Et", url=f"http://t.me/SozTapmacaBot?startgroup=new")
     ],
     [
-        InlineKeyboardButton("🇹🇷  𝖮𝗐𝗇𝖾𝗋 ", url="t.me/ByWolk"),
-        InlineKeyboardButton("✏️  𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 ", url="t.me/StarBotKanal"),
+        InlineKeyboardButton("🖥️ Məni Yaradan", url="t.me/FlexDevs"),
+        InlineKeyboardButton("❓ Əmrlər", url="t.me/SozTapmacaResmi"),
     ]
 ])
 
 
 
-START = """
-• **Merhaba** 📖\n\n• **Ben Bir Oyun Botuyum** 🎮 \n\n• **Çeşitli oyunlar oynamak ve eğlenceli vakit geçirmek için benimle oynayabilirsin** ✍🏻 \n\n• **Benimle oynamak için beni bir gruba ekleyip yönetici yapman lazim** . 💭
+START ="""
+ **Salam 👋\n\n**Mən @SozTapmacaBot Məni Qrupunuza Əlavə Edərək Söz Tapmaca Oynaya Bilərsiz\n\nƏminəmki Sizi Qoymayacam Sıxılmağa**
 """
 
     
