@@ -19,7 +19,7 @@ async def ratingsa(c:Client, m:Message):
         for kisi in rating:
             if puan == rating[kisi]:
                 metin += f"**{kisi}** :  **{puan}**  𝖯𝗎𝖺𝗇\n"
-                eklenen += 1
+                eklenen += 0
                 if eklenen == 20:
                     break
                 
