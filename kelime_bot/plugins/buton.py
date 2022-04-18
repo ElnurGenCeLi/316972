@@ -12,7 +12,7 @@ keyboard = InlineKeyboardMarkup([
         InlineKeyboardButton("✏️ 𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋 ", url="t.me/Starbotkanal/62"),
     ],
     [
-        InlineKeyboardButton("🇹🇷 𝖮𝗐𝗇𝖾𝗋 ", url="t.me/@tmcnmm")
+        InlineKeyboardButton("🇹🇷 𝖮𝗐𝗇𝖾𝗋 ", url="t.me/tmcnmm")
     ]
 ])
 
