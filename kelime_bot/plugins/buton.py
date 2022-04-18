@@ -16,7 +16,7 @@ keyboard = InlineKeyboardMarkup([
 
 
 START = """
-• Merhaba 🎉\n\n• Ben Bir Oyun Botuyum 🎮 \n\n• Çeşitli oyunlar oynamak ve eğlenceli vakit geçirmek için benimle oynayabilirsin ✍🏻 \n\n• Benimle oynamak için beni bir gruba ekleyip yönetici yapman lazim 💭
+• **Merhaba** 📖\n\n• **Ben Bir Oyun Botuyum** 🎮 \n\n• **Çeşitli oyunlar oynamak ve eğlenceli vakit geçirmek için benimle oynayabilirsin** ✍🏻 \n\n• **Benimle oynamak için beni bir gruba ekleyip yönetici yapman lazim** . 💭
 """
 
     
