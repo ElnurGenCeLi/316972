@@ -21,7 +21,7 @@ async def passs(c:Client, m:Message):
     if aktif:
         if oyun[m.chat.id]["pass"] < 3:
             oyun[m.chat.id]["pass"] += 1 
-            await c.send_message(m.chat.id,f"📖 𝖳𝗈𝗉𝗅𝖺𝗆 3 𝗉𝖺𝗌𝗌 𝗁𝖺𝗄𝗄𝗂𝗇𝗂𝗓 𝗏𝖺𝗋𝖽𝗂𝗋 !\n🥳 𝖪𝖾𝗅𝗂𝗆𝖾 𝖯𝖺𝗌 𝖦𝖾𝖼𝗂𝗅𝖽𝗂 !\n✏️ 𝖤𝗌𝗄𝗂 𝖪𝖾𝗅𝗂𝗆𝖾 : **<code>{oyun[m.chat.id]['kelime']}</code>**")
+            await c.send_message(m.chat.id,f"📖 𝖳𝗈𝗉𝗅𝖺𝗆 3 𝗉𝖺𝗌𝗌 𝗁𝖺𝗄𝗄𝗂𝗇𝗂𝗓 𝗏𝖺𝗋𝖽𝗂𝗋 !\n🥳 𝖪𝖾𝗅𝗂𝗆𝖾 𝖯𝖺𝗌 𝖦𝖾𝖼𝗂𝗅𝖽𝗂 !\n✏️ 𝖣𝗈𝗀𝗋𝗎 𝖪𝖾𝗅𝗂𝗆𝖾 : **<code>{oyun[m.chat.id]['kelime']}</code>**")
             
             oyun[m.chat.id]["kelime"] = kelime_sec()
             oyun[m.chat.id]["aktif"] = True
@@ -36,6 +36,7 @@ async def passs(c:Client, m:Message):
             text = f"""
 🎯 𝖱𝖺𝗎𝗇𝖽 : {oyun[m.chat.id]['round']}/60 
 📝 𝖪𝖾𝗅𝗂𝗆𝖾 :   <code>{kelime_list}</code>
+💰 𝖪𝖺𝗓𝖺𝗇𝖽𝗂𝗋𝖺𝖼𝖺𝗄 𝖯𝗎𝖺𝗇 : 1
 🔎 İ𝗉𝗎𝖼𝗎 : 1. {oyun[m.chat.id]["kelime"][0]}
 ✍🏻 𝖴𝗓𝗎𝗇𝗅𝗎𝗄 : {int(len(kelime_list)/2)} 
 
