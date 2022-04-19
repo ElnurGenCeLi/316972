@@ -22,7 +22,7 @@ async def buldu(c:Client, m:Message):
     try:
         if m.chat.id in oyun:
             if m.text.lower() == oyun[m.chat.id]["kelime"]:
-                await c.send_message(m.chat.id,f"🥳 𝖳𝖾𝖻𝗋𝗂𝗄𝗅𝖾𝗋 !\n**{m.from_user.mention}** \n**<code>{oyun[m.chat.id]['kelime']}</code>** , 𝖪𝖾𝗅𝗂𝗆𝖾𝗌𝗂𝗇𝗂 \n𝖡𝗎𝗅𝖽𝗎 ✅")
+                await c.send_message(m.chat.id,f"✨ Təbriklər  !\n**{m.from_user.mention}** \n**<code>{oyun[m.chat.id]['kelime']}</code>** , Sözünü Tapdı ✅")
                 if f"{m.from_user.mention}" in rating:
                     rating[f"{m.from_user.mention}"] += 1
                 else:
@@ -41,13 +41,13 @@ async def buldu(c:Client, m:Message):
                 if not oyun[m.chat.id]["round"] <= 60:
                     siralama = []
                     for i in oyun[m.chat.id]["oyuncular"]:
-                        siralama.append(f"{i} :   {oyun[m.chat.id]['oyuncular'][i]}  𝖯𝗎𝖺𝗇")
+                        siralama.append(f"{i} :   {oyun[m.chat.id]['oyuncular'][i]}  Bal")
                     siralama.sort(reverse=True)
                     siralama_text = ""
                     for i in siralama:
                         siralama_text += i + "\n"
                     
-                    return await c.send_message(m.chat.id,f"✏️ 𝖮𝗒𝗎𝗇 𝖻𝗂𝗍𝗍𝗂 ✓ \n\n📝 𝖯𝗎𝖺𝗇 𝖳𝖺𝖻𝗅𝗈𝗌𝗎 :\n\n{siralama_text}\n\n• 𝖸𝖾𝗇𝗂 𝖮𝗒𝗎𝗇 𝖻𝖺𝗌𝗅𝖺𝗍𝗆𝖺𝗄 𝗂𝖼𝗂𝗇 /game 𝗒𝖺𝗓𝖺𝖻𝗂𝗅𝗂𝗋𝗌𝗂𝗇𝗂𝗓 !")
+                    return await c.send_message(m.chat.id,f"✅ Oyun Bitti✓ \n\n📝 Ballar :\n\n{siralama_text}\n\n Yeni Oyuna Başlamaq Üçün/game Yaza Bilərsiz !")
                 
                 
                 
@@ -58,13 +58,13 @@ async def buldu(c:Client, m:Message):
                     kelime_list+= harf + " "
             
                 text = f"""
-🎯 𝖱𝖺𝗎𝗇𝖽 : {oyun[m.chat.id]['round']}/60 
-📝 𝖪𝖾𝗅𝗂𝗆𝖾 :   <code>{kelime_list}</code>
-💰 𝖪𝖺𝗓𝖺𝗇𝖽𝗂𝗋𝖺𝖼𝖺𝗄 𝖯𝗎𝖺𝗇 : 1
-🔎 İ𝗉𝗎𝖼𝗎 : 1. {oyun[m.chat.id]["kelime"][0]}
-✍🏻 𝖴𝗓𝗎𝗇𝗅𝗎𝗄 : {int(len(kelime_list)/2)} 
+🎯 Raund : {oyun[m.chat.id]['round']}/60 
+📝 Söz :   <code>{kelime_list}</code>
+💰 Qazanağınız Bal: 1
+🔎 İpucu: 1. {oyun[m.chat.id]["kelime"][0]}
+✍🏻 Uzunluq : {int(len(kelime_list)/2)} 
 
-✏️ 𝖪𝖺𝗋𝗂𝗌𝗂𝗄 𝖧𝖺𝗋𝖿𝗅𝖾𝗋𝖽𝖾𝗇 𝖣𝗈𝗀𝗋𝗎 𝖪𝖾𝗅𝗂𝗆𝖾𝗒𝗂 𝖡𝗎𝗅𝗎𝗇 🥳 🥳 🥳
+✏️ Qarışıq Hərflərdən Düzgün Sözü Tapın
                         """
                 await c.send_message(m.chat.id, text)
     except KeyError:
