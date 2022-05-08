@@ -17,9 +17,9 @@ async def kelimeoyun(c:Client, m:Message):
         aktif = False
 
     if aktif:
-        await m.reply("**❗ Onsuzda Qrupunuzda Oyun Davam Edir ✍🏻 \n Oyunu Dayandırmaq üçün /stop yaza bilərsiz")
+        await m.reply("**❗ Oyun Zaten Grubunuzda Devam Ediyor ✍🏻 \n Oyunu durdurmak için yazıp /stop durdurabilirsiniz")
     else:
-        await m.reply(f"**{m.from_user.mention}** Tərəfindən! \nSöz Tapmaca Oyunu Başladı .\n\nUğurlar !", reply_markup=kanal)
+        await m.reply(f"**{m.from_user.mention}** Tarafından! \nKelime Bulma Oyunu Başladı .\n\nİyi Şanslar !", reply_markup=kanal)
         
         oyun[m.chat.id] = {"kelime":kelime_sec()}
         oyun[m.chat.id]["aktif"] = True
@@ -37,11 +37,11 @@ async def kelimeoyun(c:Client, m:Message):
         text = f"""
 🎯 Raund : {oyun[m.chat.id]['round']}/60 
 📝 Söz :   <code>{kelime_list}</code>
-💰 Qazanağınız Bal: 1
+💰 Kazandığınız para: 1
 🔎 İpucu: 1. {oyun[m.chat.id]["kelime"][0]}
-✍🏻 Uzunluq : {int(len(kelime_list)/2)} 
+✍🏻 Uzunluk : {int(len(kelime_list)/2)} 
 
-✏️ Qarışıq Hərflərdən Düzgün Sözü Tapın 
+✏️ Karışık harflerden doğru kelimeyi bulun
         """
         await c.send_message(m.chat.id, text)
         
