@@ -24,7 +24,7 @@ USERNAME = "MultiSiriRobot"
 
 
 # BOT CLIENTİ
-app = Client(
+bot = Client(
     ":memory:",
     API_ID,
     API_HASH,
