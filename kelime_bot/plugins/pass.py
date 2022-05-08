@@ -21,7 +21,7 @@ async def passs(c:Client, m:Message):
     if aktif:
         if oyun[m.chat.id]["pass"] < 3:
             oyun[m.chat.id]["pass"] += 1 
-            await c.send_message(m.chat.id,f"❗ Ümumilikdə 3 keçidiniz var.!\n➡️ Söz Pass buraxıldı !\n✏️ Düzgün söz : **<code>{oyun[m.chat.id]['kelime']}</code>**")
+            await c.send_message(m.chat.id,f"❗ Toplam 3 geçiş hakkınız var!\n➡️ Kelime Geçişi çıktı !\n✏️ Doğru kelime : **<code>{oyun[m.chat.id]['kelime']}</code>**")
             
             oyun[m.chat.id]["kelime"] = kelime_sec()
             oyun[m.chat.id]["aktif"] = True
@@ -35,16 +35,16 @@ async def passs(c:Client, m:Message):
             
             text = f"""
 🎯 Raund : {oyun[m.chat.id]['round']}/60 
-📝 Söz :   <code>{kelime_list}</code>
-💰 Qazanacağın Bal : 1
+📝 Kelime :   <code>{kelime_list}</code>
+💰 Kazandığınız para : 1
 🔎 İ𝗉𝗎𝖼𝗎 : 1. {oyun[m.chat.id]["kelime"][0]}
-✍🏻 𝖴𝗓𝗎𝗇𝗅uğ : {int(len(kelime_list)/2)} 
+✍🏻 𝖴𝗓𝗎𝗇𝗅uk: {int(len(kelime_list)/2)} 
 
-✏️ Qarışıq Hərflərdən Düzgün Sözü Tapın
+✏️ Karışık harflerden doğru kelimeyi bulun
             """
             await c.send_message(m.chat.id, text)
             
         else:
-            await c.send_message(m.chat.id, f"<code>**❗ Keçid Haqqın Qutarıb ! </code>\n Oyunu Dayandırmaq üçün /stop yaza bilərsən ✍🏻**")
+            await c.send_message(m.chat.id, f"<code>**❗ Geçiş Doğru Kaydedildi! </code> \n Oyunu durdurmak için yazıp /stop durdurabilirsiniz✍🏻**")
     else:
-        await m.reply(f"❗ **Qrupumuzda Aktif Oyun Yoxdu !\n Yeni Oyun Başlatmaq Üçün /game Yaza Bilərsən✍🏻**")
+        await m.reply(f"❗ **Grubumuzda aktif oyun bulunmamaktadır!\n Yeni bir oyuna başlamak için /game yazabilirsiniz✍🏻**")
