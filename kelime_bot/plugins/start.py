@@ -37,7 +37,7 @@ async def kelimeoyun(c:Client, m:Message):
         text = f"""
 🎯 Raund : {oyun[m.chat.id]['round']}/60 
 📝 Söz :   <code>{kelime_list}</code>
-💰 Kazandığınız para: 1
+💰 Kazandığınız Puan: 1
 🔎 İpucu: 1. {oyun[m.chat.id]["kelime"][0]}
 ✍🏻 Uzunluk : {int(len(kelime_list)/2)} 
 
