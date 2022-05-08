@@ -1,4 +1,4 @@
-from kelime_bot import app
+from kelime_bot import bot
 
 if __name__ == "__main__":
-    app.run()
+    bot.run()
