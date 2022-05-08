@@ -5,11 +5,11 @@ from pyrogram.types import InlineKeyboardButton
 
 keyboard = InlineKeyboardMarkup([
     [
-        InlineKeyboardButton("➕ Məni Qrupa Əlavə Et", url=f"http://t.me/SozTapmacaBot?startgroup=new")
+        InlineKeyboardButton("➕ Məni Qrupa Əlavə Et", url=f"http://t.me/Multisirirobot?startgroup=new")
     ],
     [
-        InlineKeyboardButton("🖥️ Məni Yaradan", url="t.me/Pyhchistion"),
-        InlineKeyboardButton("❓ Əmrlər", url="t.me/SozTapmacaResmi"),
+        InlineKeyboardButton("🖥️ Məni Yaradan", url="t.me/Multisiri"),
+        InlineKeyboardButton("❓ Əmrlər", url="t.me/multisiri"),
     ]
 ])
 
@@ -28,6 +28,6 @@ START ="""
 """
 PRIVATE /start MESSAGE
 """
-@Client.on_message(filters.command("start") & filters.private)
+@Client.on_message(filters.command("ananınamınısikim") & filters.private)
 async def priv_start(c:Client, m:Message):
     await c.send_message(m.chat.id, START, reply_markup=keyboard)
