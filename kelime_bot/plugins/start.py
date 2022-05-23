@@ -7,6 +7,14 @@ from kelime_bot.helpers.kelimeler import *
 from kelime_bot.helpers.keyboards import *
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 
+
+# Komut
+@Client.on_message(filters.command("start"))
+async def start(bot, message):
+  await message.reply_photo("https://i.ibb.co/khRz42f/Turkish-Voice.jpg",caption=START,reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Repo", url="https://t.me/Botdestekgrubu")]]))
+
+
+
 START_TEXT = f"""
 🙋‍♂️ Merhaba Ben <b>Kelime bot</b>
 
