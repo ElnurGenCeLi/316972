@@ -100,28 +100,28 @@ You Must Join [• sᴜᴘᴘᴏʀᴛ •](https://t.me/DevilsHeavenMF)To Use Me
 FSUB_BTN = InlineKeyboardMarkup(
             [[InlineKeyboardButton("• sᴜᴘᴘᴏʀᴛ •", url="https://t.me/DevilsHeavenMF")]])
 
-@Client.on_message_callback_query(filters.regex("startmenu"))
+@Client.on_callback_query(filters.regex("startmenu"))
 async def startmenu(_, query: CallbackQuery):
     await query.edit_message_text(START_TEXT,
         reply_markup=START_BTN,
      disable_web_page_preview=True
     )
 
-@Client.on_message_callback_query(filters.regex("_help"))
+@Client.on_callback_query(filters.regex("_help"))
 async def helpmenu(_, query: CallbackQuery):
     await query.edit_message_text(HELP_TEXT,
         reply_markup=BACKTOHOME,
      disable_web_page_preview=True
     )
 
-@Client.on_message_callback_query(filters.regex("_about"))
+@Client.on_callback_query(filters.regex("_about"))
 async def aboutenu(_, query: CallbackQuery):
     await query.edit_message_text(ABOUT_TEXT,
         reply_markup=BACKTOHOME,
      disable_web_page_preview=True
     )
 
-@Client.on_message_callback_query(filters.regex("closeit"))
+@Client.on_callback_query(filters.regex("closeit"))
 async def close(_, query: CallbackQuery):
     await query.message.delete()        
 
