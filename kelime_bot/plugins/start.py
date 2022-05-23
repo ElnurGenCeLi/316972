@@ -42,7 +42,7 @@ async def start(bot, message):
 
 @Client.on_message(filters.command("help"))
 async def help(bot, message):
-  await message.reply_photo("https://i.ibb.co/khRz42f/Turkish-Voice.jpg",caption=HELP,reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Kanal 📣", url="https://t.me/Botdestekgrubu")]]))
+  await message.reply_stic("CAACAgIAAx0CUPE31gACHXBijBlectfeg9PP2S74SVIPU75E7AACsQ0AAjppOUjINKv7N0gdWh4E",caption=HELP,reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Kanal 📣", url="https://t.me/Botdestekgrubu")]]))
 
 
 # Mahoaga Ufak çaplı düzenlemeler.
