@@ -28,7 +28,8 @@ HELP = """
 @Client.on_message(filters.command("start"))
 async def start(bot, message):
   await message.reply_photo("https://i.ibb.co/khRz42f/Turkish-Voice.jpg",caption=START,reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Help", callback_data="help_menu"), InlineKeyboardButton(text="Repo", url="https://t.me/Botdestekgrubu")]]))
-@app.on_message(filters.command("help"))
+
+@Client.on_message(filters.command("help"))
 async def help(bot, message):
   await message.reply_photo("https://i.ibb.co/khRz42f/Turkish-Voice.jpg",caption=HELP,reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Geri", callback_data="start_menu")]]))
 
