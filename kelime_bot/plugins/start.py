@@ -35,7 +35,7 @@ Reklam atmak için tasarlandım. Şuanda amatör bir yazılım olabilirim, olsun
   
 
 
-@Client.on_message(command(["bilgi", f"bilgi@{BOT_USERNAME}"]))
+@Client.on_message(command(["bilgi"]))
 async def bilgi(_, message: Message):
       await message.reply_text(" ❗ Not:\n Botun aktif çalışması için şu üç yetkiye ihtiyaç vardır:\n- Mesaj silme yetkisi,\n- Bağlantı ile davet etme yetkisi,\n- Sesli sohbeti yönetme yetkisi.", 
       reply_markup=InlineKeyboardMarkup(
