@@ -11,36 +11,27 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQ
 # Komut
 @Client.on_message(filters.command("start"))
 async def start(bot, message):
-  await message.reply_photo(
-  "https://i.ibb.co/khRz42f/Turkish-Voice.jpg",
-                caption=(f"""**Merhaba {message.from_user.mention} 🎵\nBen {bot}!\nSesli sohbetlerde müzik çalabilen botum. Ban yetkisiz, Ses yönetimi yetkisi verip, Asistanı gruba ekleyiniz.\n\nDüzen Tasarım [Talia Müzik 🎙️](https://t.me/Sohbetdestek).**"""),
-         reply_markup=InlineKeyboardMarkup(
+      await message.reply_sticker("CAACAgIAAx0CUPE31gACHUZiiPmt4YAJ5GqvyJNZeDthLoZlVQACswsAAipQUUoso7YJ7GnT1h4E")
+    await message.reply_text(
+        f"""Ben **{bn}** !!
+Reklam atmak için tasarlandım. Şuanda amatör bir yazılım olabilirim, olsun Sahime mesaj atabilirsiniz. [İletişim](https://t.me/Mahoaga) """,
+        reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ ❰ Grubuna Ekle ❱ ➕", url=f"https://t.me/Efsanestar_bot?startgroup=true"
-                    )
-                ],
-                [
-                    InlineKeyboardButton(
-                        "🔊 Asistan", url="https://t.me/Taliamusicasistant"
+                        "💖 Sohbet Yardım", url="https://t.me/Botdestekgrubu"
+
                     ),
                     InlineKeyboardButton(
-                        "💬 Sohbet", url="https://t.me/Sohbetskyfall"
-                    )
-                ],
-                [
+                        "📣 Kanal", url="https://t.me/sohbetdestek"
+                    ),                    
                     InlineKeyboardButton(
-                        "🧩 Komutlar" , callback_data= "cbbilgi"
-                    ),
-                    InlineKeyboardButton(
-                        "Resmi Kanal 🇹🇷", url=f"https://t.me/Sohbetdestek"
-                    )
+                        "🌀 Repo", url="https://github.com/Mehmetbaba55" 
+                    ), 
                 ]
-                
-           ]
-        ),
-    )
+            ]
+        )
+    
   
 
 
