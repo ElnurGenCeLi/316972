@@ -6,8 +6,7 @@ from kelime_bot import oyun
 from kelime_bot.helpers.kelimeler import *
 from kelime_bot.helpers.keyboards import *
 from pyrogram.errors import FloodWait
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, CallbackQuery
-from main.logo import generate_logo
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 START = """
 **🔮 Merhaba, Harika Logolar Oluşturmak İçin Beni Kullanabilirsiniz...**
@@ -18,11 +17,11 @@ START = """
 HELP = """
 **🖼 Beni Kullanmak için?**
 
-**Logo Yapmak İçin -** `/logo İsim yazınız`
-**Kare Logo Yapmak İçin - ** `/logom İsim yazınız`
+**Oyun oynamak Yapmak için -** `/game yazınız`
+**Oyunu kapamak için - ** `/son yazınız`
 **♻️ Örnek:** 
-`/logo Mahoaga`
-`/logom Kral Geri Döndü`
+`/game`
+`/son`
 """
 
 # Komut
