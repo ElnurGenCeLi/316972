@@ -11,7 +11,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 keyboard = InlineKeyboardMarkup([
     [
-        InlineKeyboardButton("➕ Gruba Ekle", url=f"http://t.me/denemehe_bot?startgroup=new")
+        InlineKeyboardButton("➕ Grubuna Ekle", url=f"http://t.me/denemehe_bot?startgroup=new")
     ],
     [
         InlineKeyboardButton("🇹🇷 Sahibim", url="t.me/Mahoaga"),
@@ -27,13 +27,12 @@ START = """
 """
 
 HELP = """
-**🥳 Oyuna Başlamak için?**
+**🥳 Komutlar Menüsüne Hoşgeldiniz.**
 
-**Bilgi için -** `/game yazınız`
-**Kapatmak için- ** `/son yazınız`
-**♻️ Örnek:** 
-`/game`
-`/son`
+\n/game - Oyuna Başlamak için gerekli..
+/pass - Üç adet hakkınız mevcut, oyunu geçmek için.. 
+/skor - Oyuncular arasındaki rekabet bilgisi..
+/son - Oyundan çıkmak için gerekli olan komuttur.. 
 """
 
 # Komut
