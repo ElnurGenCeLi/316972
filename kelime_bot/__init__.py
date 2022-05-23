@@ -18,7 +18,7 @@ LOGGER = logging.getLogger(__name__)
 API_ID = "13424532"
 API_HASH = "7c6108e589bf3f70627ac1dc547b13d2"
 TOKEN = "5395714639:AAEVcE5YbhacspgYBnGZkwRkkrkG-WG_hjo" 
-USERNAME = "Denemehe_bot"
+USERNAME = "Mahoaga"
 
 
 
