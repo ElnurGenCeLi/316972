@@ -9,16 +9,16 @@ from pyrogram.errors import FloodWait
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 START = """
-**🔮 Merhaba, Harika Logolar Oluşturmak İçin Beni Kullanabilirsiniz...**
+**🔮 Merhaba, Kelimeleri tersten bulma oyununa hoş geldin..**
 
-➤ Tıklayınız /help Veya Beni Nasıl Kullanacağınızı Bilmek İçin Aşağıdaki Düğmeye basın
+➤ Bilgi için 👉 /help Tıklayın. Komutlar kolay ve basittir. 
 """
 
 HELP = """
-**🖼 Beni Kullanmak için?**
+**🥳 Oyuna Başlamak için?**
 
-**Oyun oynamak Yapmak için -** `/game yazınız`
-**Oyunu kapamak için - ** `/son yazınız`
+**Bilgi için -** `/game yazınız`
+**Kapatmak için- ** `/son yazınız`
 **♻️ Örnek:** 
 `/game`
 `/son`
