@@ -39,7 +39,7 @@ HELP = """
 # Komut
 @Client.on_message(filters.command("start"))
 async def start(bot, message):
-  await message.reply_photo("https://i.ibb.co/khRz42f/Turkish-Voice.jpg",caption=START,reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Grubumuz 💬", url="https://t.me/GonulkahvesiTr")]]))
+  await message.reply_photo("https://i.ibb.co/khRz42f/Turkish-Voice.jpg",caption=START,reply_markup=keyboard))
 
 @Client.on_message(filters.command("help"))
 async def help(bot, message):
