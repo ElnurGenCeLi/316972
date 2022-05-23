@@ -8,6 +8,18 @@ from kelime_bot.helpers.keyboards import *
 from pyrogram.errors import FloodWait
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
+
+keyboard = InlineKeyboardMarkup([
+    [
+        InlineKeyboardButton("➕ Gruba Ekle", url=f"http://t.me/denemehe_bot?startgroup=new")
+    ],
+    [
+        InlineKeyboardButton("🇹🇷 Sahibim", url="t.me/Mahoaga"),
+        InlineKeyboardButton("💬 Grubum", url="t.me/GonulkahvesiTr"),
+    ]
+])
+
+
 START = """
 **🔮 Merhaba, Kelimeleri tersten bulma oyununa hoş geldin..**
 
