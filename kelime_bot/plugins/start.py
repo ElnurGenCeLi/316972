@@ -20,16 +20,31 @@ HELP = """
 **Oyunu başlatmak için -** `/game İsim yazınız`
 **Kapatmak için- ** `/stop yazınız`
 **♻️ Örnek:** 
-`/game`
-`/stop`
+`/game Oyuna başlar grup içinde deneyin.`
+`/stop Oyunu grup içinde bitirmek için.`
 """
 
 # Komut
 @Client.on_message(filters.command("start"))
 async def start(bot, message):
   await message.reply_photo("https://i.ibb.co/khRz42f/Turkish-Voice.jpg",caption=START,reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Help", callback_data="help_menu"), InlineKeyboardButton(text="Repo", url="https://t.me/Botdestekgrubu")]]))
+@app.on_message(filters.command("help"))
+async def help(bot, message):
+  await message.reply_photo("https://i.ibb.co/khRz42f/Turkish-Voice.jpg",caption=HELP,reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Geri", callback_data="start_menu")]]))
+
+# Geri
+@Client.on_callback_query(filters.regex("start_menu"))
+async def start_menu(_,query):
+  await query.answer()
+  await query.message.edit(START,reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Help", callback_data="help_menu"),InlineKeyboardButton(text="💬 İletişim", url="https://t.me/Botdestekgrubu")]]))
+
+@Client.on_message_callback_query(filters.regex("help_menu"))
+async def help_menu(_,query):
+  await query.answer()
+  await query.message.edit(HELP,reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Back", callback_data="start_menu")]]))
 
 
+# Mahoaga Ufak çaplı düzenlemeler.
 @Client.on_message(filters.command("game")) 
 async def kelimeoyun(c:Client, m:Message):
     global oyun
