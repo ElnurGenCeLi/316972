@@ -25,11 +25,11 @@ HELP = """
 """
 
 # Komut
-@app.on_message(filters.command("start"))
+@Client.on_message(filters.command("start"))
 async def start(bot, message):
   await message.reply_photo("https://i.ibb.co/khRz42f/Turkish-Voice.jpg",caption=START,reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Grubumuz 💬", url="https://t.me/GonulkahvesiTr")]]))
 
-@app.on_message(filters.command("help"))
+@Client.on_message(filters.command("help"))
 async def help(bot, message):
   await message.reply_photo("https://i.ibb.co/khRz42f/Turkish-Voice.jpg",caption=HELP,reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Kanal 📣", url="https://t.me/Botdestekgrubu")]]))
 
