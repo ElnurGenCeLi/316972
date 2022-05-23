@@ -5,6 +5,36 @@ from pyrogram.types import Message
 from kelime_bot import oyun
 from kelime_bot.helpers.kelimeler import *
 from kelime_bot.helpers.keyboards import *
+from pyrogram.errors import FloodWait
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, CallbackQuery
+
+START = """
+**🔮 Merhaba, Oyun oynamaya ne dersin?...**
+
+➤ Tıklayın /help Veya Beni Nasıl Kullanacağını Ögrenmek İçin Aşağıdaki Düğmeye basın
+"""
+
+HELP = """
+**😅 Beni Kullanmak için?**
+
+**Oyunu başlatmak için -** `/game İsim yazınız`
+**Kapatmak için- ** `/stop yazınız`
+**♻️ Örnek:** 
+`/game`
+`/stop`
+"""
+
+# Komut
+@app.on_message(filters.command("start"))
+async def start(bot, message):
+  await message.reply_photo("https://i.ibb.co/khRz42f/Turkish-Voice.jpg",caption=START,reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Help", callback_data="help_menu"), InlineKeyboardButton(text="Repo", url="https://t.me/Botdestekgrubu")]]))
+
+
+
+
+
+
+
 
 @Client.on_message(filters.command("game")) 
 async def kelimeoyun(c:Client, m:Message):
