@@ -7,9 +7,9 @@
         "kelime",
         "bot"
     ],
-    "repository": "https://github.com/TechShreyash/TechZ-Logo-Maker-Bot",
-    "website": "https://t.me/TechZBots",
-    "success_url": "https://t.me/TechZLogoMakerBot",
+    "repository": "https://github.com/Pulsar8806/Se",
+    "website": "https://t.me/Sohbetdestek",
+    "success_url": "https://t.me/Botdestekgrubu",
     "env": {
         "API_ID": {
             "description": "Get this value from my.telegram.org"
@@ -17,8 +17,11 @@
         "API_HASH": {
             "description": "Get this value from my.telegram.org"
         },
-        "BOT_TOKEN": {
+        "TOKEN": {
             "description": "Get this from @BotFather"
+        },
+        "USERNAME": {
+            "description": "Get this from Owner id"
         }
     },
     "buildpacks": [
