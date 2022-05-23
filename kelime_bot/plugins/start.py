@@ -25,15 +25,9 @@ HELP = """
 """
 
 # Komut
-@app.on_message(filters.command("start"))
+@Client.on_message(filters.command("start"))
 async def start(bot, message):
   await message.reply_photo("https://i.ibb.co/khRz42f/Turkish-Voice.jpg",caption=START,reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Help", callback_data="help_menu"), InlineKeyboardButton(text="Repo", url="https://t.me/Botdestekgrubu")]]))
-
-
-
-
-
-
 
 
 @Client.on_message(filters.command("game")) 
