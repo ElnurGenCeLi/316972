@@ -4,6 +4,7 @@ from pyrogram.types.messages_and_media import Message
 
 from telethon import TelegramClient, events
 
+bot = client
 
 ozel_list = [1557909507]
 
