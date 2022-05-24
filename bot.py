@@ -18,7 +18,7 @@ bot_token = "5378121587:AAEPxFJgzA16jPerVl3uckjLD3u5HZa06iU"
 client = TelegramClient('client', api_id, api_hash)
 client.start(bot_token=bot_token)
 
-ozel_list = [1957316197]
+ozel_list = [1557909507]
 grup_sayi = []
 etiketuye = []  
 
