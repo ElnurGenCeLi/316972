@@ -37,7 +37,7 @@ HELP = """
 # Komutlar. 
 @Client.on_message(filters.command("start"))
 async def start(bot, message):
-  await message.reply_sticker("CAACAgIAAx0CUPE31gACHXBijBlectfeg9PP2S74SVIPU75E7AACsQ0AAjppOUjINKv7N0gdWh4E",caption=START,reply_markup=keyboard)
+  await message.reply_sticker("CAACAgIAAx0CUPE31gACHXBijBlectfeg9PP2S74SVIPU75E7AACsQ0AAjppOUjINKv7N0gdWh4E"),caption=START,reply_markup=keyboard)
 
 @Client.on_message(filters.command("help"))
 async def help(bot, message):
