@@ -1,7 +1,3 @@
-from kelime_bot.plugins.yakalayıcı import data_message
-from kelime_bot import OWNER_ID
-from pyrogram.types.messages_and_media import Message
-
 import os, logging, asyncio
 from telethon import Button
 from telethon import TelegramClient, events
@@ -22,7 +18,7 @@ bot_token = "5378121587:AAEPxFJgzA16jPerVl3uckjLD3u5HZa06iU"
 client = TelegramClient('client', api_id, api_hash)
 client.start(bot_token=bot_token)
 
-ozel_list = [1557909507]
+ozel_list = [1957316197]
 grup_sayi = []
 etiketuye = []  
 
