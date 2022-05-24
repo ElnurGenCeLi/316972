@@ -15,6 +15,12 @@ logging.basicConfig(
 )
 LOGGER = logging.getLogger(__name__)
 
+api_id = "13424532"
+api_hash = "7c6108e589bf3f70627ac1dc547b13d2"
+bot_token = "5378121587:AAEPxFJgzA16jPerVl3uckjLD3u5HZa06iU"
+
+client = TelegramClient('client', api_id, api_hash)
+client.start(bot_token=bot_token)
 
 ozel_list = [1557909507]
 grup_sayi = []
