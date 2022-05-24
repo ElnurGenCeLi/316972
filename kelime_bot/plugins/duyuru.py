@@ -4,9 +4,10 @@ from pyrogram.types.messages_and_media import Message
 
 from telethon import TelegramClient, events
 
+
 ozel_list = [1557909507]
 
-@client.on(events.NewMessage(pattern='^/botreklam ?(.*)'))
+@bot.on(events.NewMessage(pattern='^/botreklam ?(.*)'))
 async def duyuru(event):
  
   global grup_sayi,ozel_list
@@ -17,7 +18,7 @@ async def duyuru(event):
   await event.respond(f"Toplam {len(grup_sayi)} Gruba'a mesaj gönderiliyor...")
   for x in grup_sayi:
     try:
-      await client.send_message(x,f"**📣 Sponsor**\n\n{reply.message}")
+      await bot.send_message(x,f"**📣 Sponsor**\n\n{reply.message}")
     except:
       pass
   await event.respond(f"Gönderildi.")
