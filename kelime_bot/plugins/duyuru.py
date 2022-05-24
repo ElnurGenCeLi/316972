@@ -1,7 +1,6 @@
 from pyrogram import Client
 from pyrogram import filters
 from time import sleep
-import importlib
 from kelime_bot.plugins.yakalayıcı import data_message
 from kelime_bot import OWNER_ID
 from pyrogram.types.messages_and_media import Message
