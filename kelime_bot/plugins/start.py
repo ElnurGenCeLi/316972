@@ -31,19 +31,19 @@ HELP = """
 /game - Oyunu başlatmak için..
 /pass - Üç adet hakkınız mevcut, oyunu geçmek için.. 
 /skor - Oyuncular arasındaki rekabet bilgisi..
-/son - Oyundan çıkmak için gerekli olan komuttur.. 
+/stop - Oyundan çıkmak için gerekli olan komuttur.. 
 """
 
-# Komut
+# Komutlar. 
 @Client.on_message(filters.command("start"))
 async def start(bot, message):
-  await message.reply_sticker("",caption=START,reply_markup=keyboard)
+  await message.reply_sticker("CAACAgIAAx0CUPE31gACHXBijBlectfeg9PP2S74SVIPU75E7AACsQ0AAjppOUjINKv7N0gdWh4E",caption=START,reply_markup=keyboard)
 
 @Client.on_message(filters.command("help"))
 async def help(bot, message):
   await message.reply_photo("https://i.ibb.co/khRz42f/Turkish-Voice.jpg",caption=HELP
 
-
+# Oyunu başlat. 
 @Client.on_message(filters.command("game")) 
 async def kelimeoyun(c:Client, m:Message):
     global oyun
