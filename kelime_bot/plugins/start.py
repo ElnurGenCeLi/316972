@@ -14,8 +14,8 @@ keyboard = InlineKeyboardMarkup([
         InlineKeyboardButton("➕ Grubuna Ekle", url=f"http://t.me/denemehe_bot?startgroup=new")
     ],
     [
-        InlineKeyboardButton("🇹🇷 Sahibim", url="t.me/Mahoaga"),
-        InlineKeyboardButton("💬 Grubum", url="t.me/GonulkahvesiTr"),
+        InlineKeyboardButton("🇹🇷 Sahibim", url="t.me/GKKurucu"),
+        InlineKeyboardButton("💬 Chat", url="t.me/GonulkahvesiTr"),
     ]
 ])
 
@@ -31,7 +31,7 @@ HELP = """
 /game - Oyunu başlatmak için..
 /pass - Üç adet hakkınız mevcut, oyunu geçmek için.. 
 /skor - Oyuncular arasındaki rekabet bilgisi..
-/stop - Oyundan çıkmak için gerekli olan komuttur.. 
+/cancel - Oyundan çıkmak için gerekli olan komuttur.. 
 """
 
 # Komutlar. 
