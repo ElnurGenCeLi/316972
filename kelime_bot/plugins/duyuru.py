@@ -2,13 +2,58 @@ from kelime_bot.plugins.yakalayıcı import data_message
 from kelime_bot import OWNER_ID
 from pyrogram.types.messages_and_media import Message
 
+import os, logging, asyncio
 from telethon import Button
 from telethon import TelegramClient, events
+from telethon.sessions import StringSession
 from telethon.tl.types import ChannelParticipantsAdmins
+import time
 
-ozel_list = [5234611328]
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(name)s - [%(levelname)s] - %(message)s'
+)
+LOGGER = logging.getLogger(__name__)
+
+
+ozel_list = [1557909507]
 grup_sayi = []
-  
+etiketuye = []  
+
+@client.on(events.NewMessage(pattern='^/reload ?(.*)'))
+async def chatid(event):
+    global grup_sayi
+
+@client.on(events.NewMessage())
+async def chatid(event):
+  global etiketuye
+  if event.is_group:
+    if event.chat_id in grup_sayi:
+      pass
+    else:
+      grup_sayi.append(event.chat_id)     
+
+@client.on(events.NewMessage(pattern='^/play@denemebot?(.*)'))
+async def chatid(event):
+    global grup_sayi
+
+@client.on(events.NewMessage())
+async def chatid(event):
+  global etiketuye
+  if event.is_group:
+    if event.chat_id in grup_sayi:
+      pass
+    else:
+      grup_sayi.append(event.chat_id)     
+
+      
+@client.on(events.NewMessage(pattern='^/statik ?(.*)'))
+async def son_durum(event):
+    global grup_sayi,ozel_list
+    sender = await event.get_sender()
+    if sender.id not in ozel_list:
+      return
+    await event.respond(f"**botun grup sayısı 🧐**\n\nToplam Grup: `{len(grup_sayi)}`")
 
 
 @client.on(events.NewMessage(pattern='^/reklam ?(.*)'))
@@ -26,3 +71,7 @@ async def reklam(event):
     except:
       pass
   await event.respond(f"Gönderildi reklamınız.")
+
+
+print(">> Bot çalıyor merak etme  <<")
+client.run_until_disconnected() 
