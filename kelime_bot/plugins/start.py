@@ -32,7 +32,7 @@ async def start(bot, message):
   await message.reply_photo("https://i.ibb.co/khRz42f/Turkish-Voice.jpg",caption=START,reply_markup=keyboard)
 
 @Client.on_message(filters.command("help"))
-async def help(client: Client, message: Message):
+async def help(bot, message):
     await message.reply_sticker("CAACAgIAAx0CUPE31gACHXBijBlectfeg9PP2S74SVIPU75E7AACsQ0AAjppOUjINKv7N0gdWh4E"
     await message.reply_text(
         f"""<b>Merhaba {message.from_user.first_name}! 
