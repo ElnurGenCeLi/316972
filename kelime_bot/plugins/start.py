@@ -33,7 +33,7 @@ async def start(bot, message):
 
 @Client.on_message(filters.command("help"))
 async def help(bot, message):
-    await message.reply_sticker("CAACAgIAAx0CUPE31gACHXBijBlectfeg9PP2S74SVIPU75E7AACsQ0AAjppOUjINKv7N0gdWh4E",caption=help,reply_markup=keyboard)
+    await message.reply_sticker("CAACAgIAAx0CUPE31gACHXBijBlectfeg9PP2S74SVIPU75E7AACsQ0AAjppOUjINKv7N0gdWh4E",reply_markup=keyboard)
     await message.reply_text(
         f"""<b>Merhaba {message.from_user.first_name}!
 n/game - Oyunu başlatmak için..
