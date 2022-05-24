@@ -26,24 +26,30 @@ START = """
 ➤ Bilgi için 👉 /help Tıklayın. Komutlar kolay ve basittir. 
 """
 
-HELP = """
-**🥳 Komutlar Menüsüne Hoşgeldiniz.**
-
-\n/game - Oyuna Başlamak için gerekli..
-/pass - Üç adet hakkınız mevcut, oyunu geçmek için.. 
-/skor - Oyuncular arasındaki rekabet bilgisi..
-/son - Oyundan çıkmak için gerekli olan komuttur.. 
-"""
-
 # Komut
 @Client.on_message(filters.command("start"))
 async def start(bot, message):
   await message.reply_photo("https://i.ibb.co/khRz42f/Turkish-Voice.jpg",caption=START,reply_markup=keyboard)
 
 @Client.on_message(filters.command("help"))
-async def help(bot, message):
-  await message.reply_sticker("CAACAgIAAx0CUPE31gACHXBijBlectfeg9PP2S74SVIPU75E7AACsQ0AAjppOUjINKv7N0gdWh4E",HELP,reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Kanal 📣", url="https://t.me/Botdestekgrubu")]]))
-
+async def help(client: Client, message: Message):
+    await message.reply_sticker("CAACAgIAAx0CUPE31gACHXBijBlectfeg9PP2S74SVIPU75E7AACsQ0AAjppOUjINKv7N0gdWh4E"
+    await message.reply_text(
+        f"""<b>Merhaba {message.from_user.first_name}! 
+/pass - Üç adet hakkınız mevcut, oyunu geçmek için.. 
+/skor - Oyuncular arasındaki rekabet bilgisi..
+/son - Oyundan çıkmak için gerekli olan komuttur.. 
+ </b>""",
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "🇹🇷 Sahibim", url="https://t.me/Mahoaga" 
+                    )
+                ]
+            ]
+        )
+    ) 
 
 # Mahoaga Ufak çaplı düzenlemeler.
 @Client.on_message(filters.command("game")) 
