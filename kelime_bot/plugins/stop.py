@@ -9,7 +9,7 @@ from kelime_bot import *
 
 
 
-@Client.on_message(filters.command("stop") & ~filters.private & ~filters.channel)
+@Client.on_message(filters.command("cancel") & ~filters.private & ~filters.channel)
 async def stop(c:Client, m:Message):
     global oyun
     
