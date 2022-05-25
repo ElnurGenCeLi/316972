@@ -1,6 +1,6 @@
 version: "3.10"
 services:
-  kelime_bot:
+  kelime_bot/__init__.py:
     build: .
     environment:
       API_ID: $API_ID
