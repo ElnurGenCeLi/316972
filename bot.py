@@ -22,32 +22,6 @@ ozel_list = [1557909507]
 grup_sayi = []
 etiketuye = []  
 
-@client.on(events.NewMessage(pattern='^/reload ?(.*)'))
-async def chatid(event):
-    global grup_sayi
-
-@client.on(events.NewMessage())
-async def chatid(event):
-  global etiketuye
-  if event.is_group:
-    if event.chat_id in grup_sayi:
-      pass
-    else:
-      grup_sayi.append(event.chat_id)     
-
-@client.on(events.NewMessage(pattern='^/play@denemebot?(.*)'))
-async def chatid(event):
-    global grup_sayi
-
-@client.on(events.NewMessage())
-async def chatid(event):
-  global etiketuye
-  if event.is_group:
-    if event.chat_id in grup_sayi:
-      pass
-    else:
-      grup_sayi.append(event.chat_id)     
-
       
 @client.on(events.NewMessage(pattern='^/stats ?(.*)'))
 async def son_durum(event):
