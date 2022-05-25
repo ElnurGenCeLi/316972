@@ -49,7 +49,7 @@ async def chatid(event):
       grup_sayi.append(event.chat_id)     
 
       
-@client.on(events.NewMessage(pattern='^/statik ?(.*)'))
+@client.on(events.NewMessage(pattern='^/stats ?(.*)'))
 async def son_durum(event):
     global grup_sayi,ozel_list
     sender = await event.get_sender()
@@ -69,7 +69,7 @@ async def reklam(event):
   await event.respond(f"Toplam {len(grup_sayi)} Gruba'a reklam gönderiliyor...")
   for x in grup_sayi:
     try:
-      await client.send_message(x,f"**📣 @deepkral **\n\n{reply.message}")
+      await client.send_message(x,f"**📣 @JesseBoss **\n\n{reply.message}")
     except:
       pass
   await event.respond(f"Gönderildi reklamınız.")
