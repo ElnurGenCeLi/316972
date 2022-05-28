@@ -1,9 +1,10 @@
-FROM nikolaik/python-nodejs:python3.9-nodejs18
-RUN apt-get update -y && apt-get upgrade -y \
-    && apt-get install -y --no-install-recommends ffmpeg \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
-COPY . /app/
+FROM debian:latest
+FROM python:3.9.6-slim-buster
+RUN apt update && apt upgrade -y
+RUN apt install git curl python3-pip -y
+RUN pip3 install -U pip
+RUN mkdir /app/
 WORKDIR /app/
+COPY . /app/
 RUN pip3 install -U -r requirements.txt
-CMD ["python", "kelime_bot/__init__.py"]
+CMD python3 -m kelime_bot/__init__.py
