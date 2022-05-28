@@ -1,5 +1,0 @@
-.env
-*.session
-raw_files/
-downloads/
-*.session-journal
