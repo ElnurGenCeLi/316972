@@ -1,1 +1,9 @@
-Ksks
+version: "1.7"
+services:
+  yukki:
+    build: .
+    environment:
+      API_ID: $API_ID
+      API_HASH: $API_HASH 
+      TOKEN: $TOKEN
+      USERNAME: $USERNAME
