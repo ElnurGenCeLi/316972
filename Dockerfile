@@ -1,9 +1,10 @@
-FROM nikolaik/python-nodejs:python3.10-nodejs17
+FROM debian:latest
+
 RUN apt update && apt upgrade -y
-RUN apt install ffmpeg -y
-COPY . /app
+RUN apt install git curl python3-pip ffmpeg -y
+RUN pip3 install -U pip
+RUN cd /
+RUN git clone https://github.com/Pulsar8806/se-bot.git
 WORKDIR /app
-RUN chmod 777 /app
-RUN pip3 install --upgrade pip
-RUN pip3 install --no-cache-dir -U -r requirements.txt
+RUN pip3 install -U -r requirements.txt
 CMD ["python3", "kelime_bot/__init__.py"]
