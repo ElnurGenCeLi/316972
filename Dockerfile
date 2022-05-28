@@ -1,14 +1,19 @@
-FROM python:3.9-slim-bullseye as compile-image
-RUN python -m venv /opt/venv
-ENV PATH="/opt/venv/bin:$PATH"
-COPY requirements.txt .
-RUN pip install --no-cache-dir --upgrade pip \
- && pip install --no-cache-dir -r requirements.txt
+FROM python:3.9
+RUN apt update
+RUN apt upgrade -y
+RUN apt install -y chromium chromium-driver locales locales-all xvfb
+RUN curl -fsSL https://deb.nodesource.com/setup_15.x | bash -
+RUN apt install -y nodejs
+RUN npm --prefix /src install puppeteer
 
-# Итоговый образ, в котором будет работать бот
-FROM python:3.9-slim-bullseye
-COPY --from=compile-image /opt/venv /opt/venv
-ENV PATH="/opt/venv/bin:$PATH"
+ENV LC_ALL en_US.UTF-8
+ENV LANG en_US.UTF-8
+ENV LANGUAGE en_US.UTF-8
+
 WORKDIR /app
-COPY /app
+ARG requirements=requirements.txt
+COPY $requirements requirements.txt
+RUN pip install -r requirements.txt --no-cache-dir
+COPY VERSION version.txt
+COPY app/
 CMD ["python", "kelime_bot/__init__.py"]
