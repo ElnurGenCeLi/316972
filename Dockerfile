@@ -1,19 +1,9 @@
-FROM python:3.9
-RUN apt update
-RUN apt upgrade -y
-RUN apt install -y chromium chromium-driver locales locales-all xvfb
-RUN curl -fsSL https://deb.nodesource.com/setup_15.x | bash -
-RUN apt install -y nodejs
-RUN npm --prefix /src install puppeteer
-
-ENV LC_ALL en_US.UTF-8
-ENV LANG en_US.UTF-8
-ENV LANGUAGE en_US.UTF-8
-
-WORKDIR /app
-ARG requirements=requirements.txt
-COPY $requirements requirements.txt
-RUN pip install -r requirements.txt --no-cache-dir
-COPY VERSION version.txt
-COPY app/
+FROM nikolaik/python-nodejs:python3.9-nodejs18
+RUN apt-get update -y && apt-get upgrade -y \
+    && apt-get install -y --no-install-recommends ffmpeg \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+COPY . /app/
+WORKDIR /app/
+RUN pip3 install -U -r requirements.txt
 CMD ["python", "kelime_bot/__init__.py"]
