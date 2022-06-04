@@ -1,4 +1,4 @@
-### Telegram Kelime Oyunu @wiperowner 
+### Telegram Kelime Oyunu @Nevarevladim
 📝
 ## Deploy to Heroku
 
