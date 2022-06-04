@@ -7,9 +7,9 @@
         "kelime",
         "bot"
     ],
-    "repository": "https://github.com/Pulsar8806/Se",
-    "website": "https://t.me/Sohbetdestek",
-    "success_url": "https://t.me/Botdestekgrubu",
+    "repository": "https://github.com/Tuncay456/Se?organization=Tuncay456&organization=Tuncay456",
+    "website": "https://t.me/+0kf_3zSzsCszZWJk",
+    "success_url": "https://t.me/+0kf_3zSzsCszZWJk",
     "env": {
         "API_ID": {
             "description": "Get this value from my.telegram.org"
