@@ -8,7 +8,7 @@ from kelime_bot import *
 
 
 
-@Client.on_message(filters.command("pass") & ~filters.private & ~filters.channel)
+@Client.on_message(filters.command("kec") & ~filters.private & ~filters.channel)
 async def passs(c:Client, m:Message):
     global oyun
     
@@ -19,8 +19,8 @@ async def passs(c:Client, m:Message):
         aktif = False
 
     if aktif:
-        if oyun[m.chat.id]["pass"] < 3:
-            oyun[m.chat.id]["pass"] += 1 
+        if oyun[m.chat.id]["kec"] < 3:
+            oyun[m.chat.id]["kec"] += 1 
             await c.send_message(m.chat.id,f"❗ Toplam 3 dəfə keçə bilərsiz!\n➡️ Növbəti Sözə Keçid Edildi !\n✏️ Düzgün Söz : **<code>{oyun[m.chat.id]['kelime']}</code>**")
             
             oyun[m.chat.id]["kelime"] = kelime_sec()
