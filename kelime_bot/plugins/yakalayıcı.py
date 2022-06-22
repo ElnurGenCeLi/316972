@@ -41,7 +41,7 @@ async def buldu(c:Client, m:Message):
                 if not oyun[m.chat.id]["round"] <= 60:
                     siralama = []
                     for i in oyun[m.chat.id]["oyuncular"]:
-                        siralama.append(f"{i} :   {oyun[m.chat.id]['oyuncular'][i]}  Bal")
+                        siralama.append(f"{i} :   {oyun[m.chat.id]['oyuncular'][i]}  Xal🌟")
                     siralama.sort(reverse=True)
                     siralama_text = ""
                     for i in siralama:
