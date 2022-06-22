@@ -4,7 +4,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 
-@Client.on_message(filters.command("skor"))
+@Client.on_message(filters.command("global"))
 async def ratingsa(c:Client, m:Message):
     global rating
     metin = """📝 Global Qrup Xalları :
