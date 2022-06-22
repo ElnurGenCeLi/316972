@@ -62,7 +62,7 @@ async def kelimeoyun(c:Client, m:Message):
         oyun[m.chat.id] = {"kelime":kelime_sec()}
         oyun[m.chat.id]["aktif"] = True
         oyun[m.chat.id]["round"] = 1
-        oyun[m.chat.id]["pass"] = 0
+        oyun[m.chat.id]["kec"] = 0
         oyun[m.chat.id]["oyuncular"] = {}
         
         kelime_list = ""
