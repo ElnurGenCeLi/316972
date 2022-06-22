@@ -28,10 +28,10 @@ START = """
 
 HELP = """
 **✌️ Əmirlər Menyusuna Xoş Gəldiniz.**
-/game - Oyunu başlatmak üçün..
-/pass - Üç dəfə işlədə bilərsiz, oyunu geçmek üçün.. 
-/skor - Oyuncuların reytinqi..
-/cancel - Oyunda çıxmaq üçün lazım olan əmr..
+/game - Oyunu başlatmak üçün
+/pass - Üç dəfə işlədə bilərsiz, oyunu geçmek üçün
+/global - Global reytinq
+/cancel - Oyunda çıxmaq üçün lazım olan əmr
 """
 
 # Komutlar. 
