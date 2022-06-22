@@ -7,7 +7,7 @@ from pyrogram.types import Message
 @Client.on_message(filters.command("global"))
 async def ratingsa(c:Client, m:Message):
     global rating
-    metin = """📝 Global Qrup Xalları :
+    metin = """📝 Global Üzrə Oyunçuların Xalları :
 
 """
     eklenen = 0
