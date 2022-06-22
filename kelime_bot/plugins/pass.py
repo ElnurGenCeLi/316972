@@ -34,11 +34,11 @@ async def passs(c:Client, m:Message):
                 kelime_list+= harf + " "
             
             text = f"""
-🎯 Raund : {oyun[m.chat.id]['round']}/60 
-📝 Söz :   <code>{kelime_list}</code>
-💰 Qazandığınız Xal : 1
-🔎 Kömək : 1. {oyun[m.chat.id]["kelime"][0]}
-✍🏻 Uzunluq : {int(len(kelime_list)/2)} 
+🎯 Raund: {oyun[m.chat.id]['round']}/60 
+📝 Söz:   <code>{kelime_list}</code>
+💰 Qazandığınız Xal: 1
+🔎 Kömək: {oyun[m.chat.id]["kelime"][0]}
+✍🏻 Uzunluq: {int(len(kelime_list)/2)} 
 
 ✏️ Qarışık həriflərdən düzgün sözü tapın
             """
