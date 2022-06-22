@@ -77,7 +77,7 @@ async def kelimeoyun(c:Client, m:Message):
 📝 Söz :   <code>{kelime_list}</code>
 💰 Qazandığın Xal : 1
 🔎 Kömək : 1. {oyun[m.chat.id]["kelime"][0]}
-✍🏻 Uzunluq: {int(len(kelime_list)/2)} 
+✍🏻 Uzunluq : {int(len(kelime_list)/2)} 
 
 ✏️ Qarışık həriflərdən düzgün sözü tapın
         """
