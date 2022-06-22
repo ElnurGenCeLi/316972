@@ -21,17 +21,17 @@ keyboard = InlineKeyboardMarkup([
 
 
 START = """
-**🔮 Merhaba, Kelimeleri tersten bulma oyununa hoş geldin..**
+**Salam, Sözdəri tərsdən tapma oyununa xoş gəldin**
 
-➤ Bilgi için 👉 /help Tıklayın. Komutlar kolay ve basittir. 
+➤ Əmirlər için 👉 /help Yazaraq. Əmirlərə baxa bilərsiz. 
 """
 
 HELP = """
-**✌️ Komutlar Menüsüne Hoşgeldiniz.**
-/game - Oyunu başlatmak için..
-/pass - Üç adet hakkınız mevcut, oyunu geçmek için.. 
-/skor - Oyuncular arasındaki rekabet bilgisi..
-/cancel - Oyundan çıkmak için gerekli olan komuttur.. 
+**✌️ Əmirlər Menyusuna Xoş Gəldiniz.**
+/game - Oyunu başlatmak üçün..
+/pass - Üç dəfə işlədə bilərsiz, oyunu geçmek üçün.. 
+/skor - Oyuncuların reytinqi..
+/cancel - Oyunda çıxmaq üçün lazım olan əmr..
 """
 
 # Komutlar. 
