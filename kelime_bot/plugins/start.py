@@ -31,7 +31,7 @@ HELP = """
 /game - Oyunu başlatmak üçün
 /kec - Üç dəfə işlədə bilərsiz, oyunu geçmek üçün
 /global - Global reytinq
-/cancel - Oyunda çıxmaq üçün lazım olan əmr
+/stop - Oyunda çıxmaq üçün lazım olan əmr
 """
 
 # Komutlar. 
