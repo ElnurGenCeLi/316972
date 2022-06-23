@@ -25,7 +25,7 @@ START = """
 
 Mən Qrub Üçün Yaradılmış Əyləncəli Oyun Botuyam Məni Qruba Əlavə Edərək Oyuna İndi Başla!**
 
-Əmirlər üçün 👉 /help Yazaraq. Əmirlərə baxa bilərsiz. 
+Botun istifadə qaydasını öyrənmək üçün /help əmrindən istifadə edin
 """
 
 HELP = """
