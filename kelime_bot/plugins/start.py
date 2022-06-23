@@ -21,9 +21,11 @@ keyboard = InlineKeyboardMarkup([
 
 
 START = """
-**Salam, Sözdəri tərsdən tapma oyununa xoş gəldin**
+**👋  Salam
 
-➤ Əmirlər için 👉 /help Yazaraq. Əmirlərə baxa bilərsiz. 
+Mən Qrub Üçün Yaradılmış Əyləncəli Oyun Botuyam Məni Qruba Əlavə Edərək Oyuna İndi Başla!**
+
+Əmirlər üçün 👉 /help Yazaraq. Əmirlərə baxa bilərsiz. 
 """
 
 HELP = """
