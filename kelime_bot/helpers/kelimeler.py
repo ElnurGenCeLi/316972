@@ -13,7 +13,7 @@ kelimeler = ["gözəl","məlumat","problem","təmin","ayrılmaq","vaxt","su","is
              'ya', 'uşaq', 'iki', 'bax', 'iş', 'in', 'böyük', 'yox', 'başlanğıc', 'yol', 'qal', 'niyə', 'sən ',
              "mövzu", "olmaq", "yaxşı", "qadın", "ev", "olmaq", "olmaq", "demək", "göz", "lazım", "dünya",
              'baş', 'dövlət', 'yan', 'keçmək', 'siz', 'onlar', 'yeni', 'əvvəl', 'başqa', 'dövlət', 'orta', 'su', 'girmək ', 'ölkə',
-             'yemək', 'heç', 'hətta', 'necə', 'hamısı', 'əleyhinə', 'tapmaq', 'belə', 'yaşamaq', 'düşünmək', 'eyni', 'içmək', 'lakin'',
+             'yemək', 'heç', 'hətta', 'necə', 'hamısı', 'əleyhinə', 'tapmaq', 'belə', 'yaşamaq', 'düşünmək', 'eyni', 'içmək', 'lakin',
              'şəxs', 'onlar', 'və ya', 'birinci', 'görə', 'ön', 'son', 'bir', 'forma', 'vacib', 'üz', 'hər ikisi', ' göstərmək ', 'etmək','qalx', 'hətta', 'təsir', 'inkişaf', 'keçmək', 'bədən', 'düşüncə', 'milyon', 'oynamaq', 'dəyişiklik', 'əsas',
              'yaratmaq', 'çatmaq', 'düşünmək', 'keçmək', 'mədəniyyət', 'qurmaq', 'amma', 'buna', 'rəsm etmək', 'işıq', 'içmək',
              'xanım', 'xidmət', 'ehtiyac', 'nöqtə', 'istiqamət', 'bəli', 'oyun', 'artırma', 'yenidən yükləmə', 'proses', 'qısa', 'asan',
