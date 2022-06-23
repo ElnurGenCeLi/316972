@@ -60,12 +60,12 @@ async def buldu(c:Client, m:Message):
                 text = f"""
 🎯 Raund: {oyun[m.chat.id]['round']}/60 
 📝 Söz:   <code>{kelime_list}</code>
-💰 Kazandığınız Xallar: 1
+💰 Qazandığın Xal: 1
 🔎 Kömək: {oyun[m.chat.id]["kelime"][0]}
-✍🏻 Uzunluq: {int(len(kelime_list)/2)} 
+✍🏻 Uzunluq : {int(len(kelime_list)/2)} 
 
 ✏️ Qarışık həriflərdən düzgün sözü tapın
-                        """
+        """
                 await c.send_message(m.chat.id, text)
     except KeyError:
         pass
