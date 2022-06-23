@@ -34,17 +34,17 @@ kelimeler = ["gözəl","məlumat","problem","təmin","ayrılmaq","vaxt","su","is
              'məktub', 'soyuq', 'canlı', 'idikeylem', 'maşın', 'istifadə etmək', 'köhnə', 'boş', 'görəsən', 'kibrit', 'menecer',
              'gətirildi', 'metre', 'saxlanıldı', 'keyfiyyət', 'bitki', 'dəyişiklik', 'tibb', 'kredit', 'qanun', 'uğurlu',
              'bir', 'imkan', 'cəza', 'hər şey', 'yoxlama', 'top', 'ekspert', 'doldurma', 'kanal', 'boşluq', 'uyğun',
-             'illik', 'buna görə', 'yazmaq', 'aid olmaq', 'barmaq', 'saymaq', 'atmaq', 'müəyyən etmək', 'normal', 'hele',
+             'illik', 'buna görə', 'yazmaq', 'aid', 'barmaq', 'saymaq', 'atmaq', 'müəyyən etmək', 'normal', 'hele',
              'prinsip', 'qırmızı', 'rol', 'mahnı', 'heyət', 'hazır', 'oxşar', 'nəsə', 'müəllim', 'oğlan', 'gündəlik', 'siyasət',
              'cinayət', 'niyə', 'səhnə', 'ilişib', 'özəl', 'oturmaq', 'saxla', 'artist', 'üstünlük', 'uzamaq', 'səhnə',
-'əlavə et', 'meşə', 'ayrı', 'sifariş', 'faiz', 'adətən', 'həmişə', 'hekayə', 'hüceyrə', 'orada', 'roman',
+'əlavə', 'meşə', 'ayrı', 'sifariş', 'faiz', 'adətən', 'həmişə', 'hekayə', 'hüceyrə', 'orada', 'roman',
              'vergi', 'yanmaq', 'qardaş', 'mətbuat', 'dəstək', 'geyinmək', 'səhv', 'limit', 'birlik', 'iş', 'görüşmək',
              'yarım', 'yetər', 'fərdi', 'qaranlıq', 'avtobus', 'sənaye', 'körpə', 'vətəndaş', 'nazir', 'zaman', 'millət',
              'reklam', 'yüksəlmə', 'ölçü', 'jurnal', 'inflyasiya', 'sosial', 'kimsə', 'keçmiş', 'xəstəxana', 'varlıq',
              'görüş', 'jurnalist', 'daxili', 'iman', 'keyfiyyət', 'bitdi', 'bitiş', 'yerləşin', 'giriş', 'rahat',
              'cəmi', 'birlikdə', 'mağaza', 'gizli', 'oxşar', 'dəri', 'çevirmək', 'döyüş', 'problem', 'xidmət', 'müalicə',
              'yaşıl', 'nazirlik', 'təzyiq', 'reaksiya', 'cümlə', 'istək', 'azadlıq', 'yenidən', 'şəxsiyyət', 'məsələ', 'üçüncü',
-             'müəyyən et', 'qiymətləndirmək', 'maraqlı', 'sürücü', 'süd', 'tutmaq', 'eşya', 'beynəlxalq', 'namizəd',
+             'müəyyən', 'qiymətləndirmək', 'maraqlı', 'sürücü', 'süd', 'tutmaq', 'eşya', 'beynəlxalq', 'namizəd',
              ]
 
 
