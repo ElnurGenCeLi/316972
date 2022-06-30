@@ -22,7 +22,7 @@ async def buldu(c:Client, m:Message):
     try:
         if m.chat.id in oyun:
             if m.text.lower() == oyun[m.chat.id]["kelime"]:
-                await c.send_message(m.chat.id,f"✨ Təbriklər !\n**{m.from_user.mention}** \n**<code>{oyun[m.chat.id]['kelime']}</code>** , Sözünü Tapdı ✅\n\n @SecretMMC")
+                await c.send_message(m.chat.id,f"✨ Təbriklər !\n**{m.from_user.mention}** \n**<code>{oyun[m.chat.id]['kelime']}</code>** , Sözünü Tapdı ✅\n\n @CguesMasterResmi")
                 if f"{m.from_user.mention}" in rating:
                     rating[f"{m.from_user.mention}"] += 1
                 else:
