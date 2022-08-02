@@ -14,18 +14,18 @@ keyboard = InlineKeyboardMarkup([
         InlineKeyboardButton("Məni Qruba Əlavə Et ↗️", url=f"http://t.me/SozTapmacaRobot?startgroup=new")
     ],
     [
-        InlineKeyboardButton("🧔🏻 Developer", url="https://t.me/vusaliw"),
+        InlineKeyboardButton("🥷 Qurucu", url="https://t.me/vusaliw"),
         InlineKeyboardButton("📣 Kanal", url="https://t.me/NyzmiBotlarim"),
     ]
 ])
 
 
 START = """
-**👋  Salam
+**Salam ! 
+Mənimlə oyun oynamaq istəyirsənsə, bir qrupa at və oyuna başla. Mən özəl söhbətlər üçün yaradılmamışam.
+Rəsmi Kanal @NyzmiBotlar 
+Əlaqə @Vusalim**
 
-Mən Qrub Üçün Yaradılmış Əyləncəli Oyun Botuyam Məni Qruba Əlavə Edərək Oyuna İndi Başla!**
-
-Botun istifadə qaydasını öyrənmək üçün /help əmrindən istifadə edin
 """
 
 HELP = """
