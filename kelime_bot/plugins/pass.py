@@ -8,7 +8,7 @@ from kelime_bot import *
 
 
 
-@Client.on_message(filters.command("kec") & ~filters.private & ~filters.channel)
+@Client.on_message(filters.command("skip") & ~filters.private & ~filters.channel)
 async def passs(c:Client, m:Message):
     global oyun
     
