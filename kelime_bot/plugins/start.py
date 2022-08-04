@@ -40,6 +40,11 @@ HELP = """
 """
 
 # Komutlar. 
+@Client.on_message(command("sudo")reply_text("Botun Sahibləri.:
+
+→ @Vusaldi
+→ @Vusaliw")
+
 @Client.on_message(filters.command("start"))
 async def start(bot, message):
   await message.reply_photo("https://te.legra.ph/file/44b32dcc5e13ec5308e9c.jpg",caption=START,reply_markup=keyboard)
