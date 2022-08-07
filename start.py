@@ -11,45 +11,48 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 keyboard = InlineKeyboardMarkup([
     [
-        InlineKeyboardButton("➕ Məni Qrupa Əlavə Et ➕", url=f"http://t.me/SozTapmacaRobot?startgroup=new")
+        InlineKeyboardButton("➕ Məni Quruba Əlavə Et ➕", url=f"http://t.me/UltraXGameBot?startgroup=new")
     ],
     [
-        InlineKeyboardButton("🥷 Qurucu", url="https://t.me/vusaliw"),
-        InlineKeyboardButton("📲 Yeniliklər", url="https://t.me/nyzmibotlarim"),
+        InlineKeyboardButton("👨‍💻 Sahibi", url="https://t.me/Kam4an"),
+        InlineKeyboardButton("📲 Yeniliklər", url="https://t.me/UltraXNews"),
     ]
 ])
 
 
 START = """
-**Salam ! 
-Mənimlə oyun oynamaq istəyirsənsə, bir qrupa at və oyuna başla. Mən özəl söhbətlər üçün yaradılmamışam.
-Rəsmi Kanal @NyzmiBotlar 
-Əlaqə @Vusalim
+**• 👋 Salam UltraX Game 🕹 Oyununa Xoş Gəldiz 
+
+• Mən qarışığ həriflərlə sözü tapmağ oyunuyam 🎯 
+
+• Mənimlə oynamaq üçün məni qrupa əlavə edib sadə admin hüquqları verməlisən . 💭**
+
+• • Botun istifadə qaydasını öyrənmək üçün /help əmrindən istifadə edin ⛑
 """
 
 HELP = """
 ⛑ Əmirlər Menyusu ⛑
 
 /start - Botu başladar
-/basla - Oyunu başlat 
+/ultrax - Oyunu başlat 
 /skip - Oyunu keç 
 /global - Global reytinq 
 /cancel - Oyunu dayndırmağ 
 
-Əlaqə - @Vusalim 🖤
+Əlaqə - @Kam4an 👨‍💻
 """
 
 # Komutlar. 
 @Client.on_message(filters.command("start"))
 async def start(bot, message):
-  await message.reply_photo("https://te.legra.ph/file/44b32dcc5e13ec5308e9c.jpg",caption=START,reply_markup=keyboard)
+  await message.reply_photo("https://telegra.ph/file/69ab03c4a4274aeaca29a.jpg",caption=START,reply_markup=keyboard)
 
 @Client.on_message(filters.command("help"))
 async def help(bot, message):
-  await message.reply_photo("https://te.legra.ph/file/44b32dcc5e13ec5308e9c.jpg",caption=HELP) 
+  await message.reply_photo("https://telegra.ph/file/69ab03c4a4274aeaca29a.jpg",caption=HELP) 
 
 # Oyunu başlat. 
-@Client.on_message(filters.command("basla")) 
+@Client.on_message(filters.command("ultrax")) 
 async def kelimeoyun(c:Client, m:Message):
     global oyun
     aktif = False
