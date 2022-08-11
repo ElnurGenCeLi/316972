@@ -51,6 +51,10 @@ HELP = """
 async def start(bot, message):
   await message.reply_photo("https://te.legra.ph/file/44b32dcc5e13ec5308e9c.jpg",caption=START,reply_markup=keyboard)
 
+@Client.on_message(filters.command("reklam"))
+async def reklam(bot, message):
+  await message.reply_photo("https://telegra.ph/file/69ab03c4a4274aeaca29a.jpg",caption=REKLAM,reply_markup=keyboard)
+
 @Client.on_message(filters.command("help"))
 async def help(bot, message):
   await message.reply_photo("https://te.legra.ph/file/44b32dcc5e13ec5308e9c.jpg",caption=HELP) 
