@@ -47,12 +47,6 @@ HELP = """
 async def start(bot, message):
   await message.reply_photo("https://te.legra.ph/file/44b32dcc5e13ec5308e9c.jpg",caption=START,reply_markup=keyboard)
 
-@Client.on_message(command(["reklam"]))
-
-async def reklam(_, message: Message):
-
-      await message.reply_text("**Reklam 5 AZN!🇦🇿 Ucuz Repoların satışı üçün @Vusalim yazın**")
-
 @Client.on_message(filters.command("help"))
 async def help(bot, message):
   await message.reply_photo("https://te.legra.ph/file/44b32dcc5e13ec5308e9c.jpg",caption=HELP) 
