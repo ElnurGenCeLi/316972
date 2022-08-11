@@ -30,6 +30,10 @@ START = """
 • • Botun istifadə qaydasını öyrənmək üçün /help əmrindən istifadə edin ⛑
 """
 
+REKLAM = """
+MƏLUMAT UCUN @vusaliw
+"""
+
 HELP = """
 ⛑ Əmirlər Menyusu ⛑
 
